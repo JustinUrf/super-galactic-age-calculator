@@ -14,6 +14,10 @@ export default class GalacticAge {
     let marsAge = this.userAge / 1.88;
     this.marsAge = parseFloat(marsAge).toFixed(2);
   }
+  jupiterAge() {
+    let jupiterAge = this.userAge / 11.86;
+    this.jupiterAge = parseFloat(jupiterAge).toFixed(2);
+  }
 
 
 

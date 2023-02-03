@@ -29,5 +29,6 @@ describe('GalacticAge', () => {
     const userAge = new GalacticAge(7);
     userAge.jupiterAge();
     expect(userAge.jupiterAge).toEqual("0.59");
+    console.debug(parseFloat(userAge.jupiterAge));
   })
 })

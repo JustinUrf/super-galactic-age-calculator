@@ -22,12 +22,27 @@ export default class GalacticAge {
       yearsPassedArray.push(parseFloat(difference / .62).toFixed(2) + " Venus years have passed.")
       yearsPassedArray.push(parseFloat(difference / 1.88).toFixed(2) + " Mars years have passed.")
       yearsPassedArray.push(parseFloat(difference / 11.86).toFixed(2) + " Jupiter years have passed.")
+      return yearsPassedArray
+      
     }
     else {
-      yearsPassedArray += "Please input a number less than your current age!"
+      return "Please input a number less than your current age!"
     }
-    return yearsPassedArray
   }
 
-
+  yearsTillNextBirthday(yearsTill) {
+    let yearsTillArray = []
+    if(this.userAge < yearsTill) {
+      let difference = yearsTill - this.userAge
+      yearsTillArray.push(difference + " Earth years have yet to pass");
+      yearsTillArray.push(parseFloat(difference / .24).toFixed(2) + " Mercury years have yet to pass.");
+      yearsTillArray.push(parseFloat(difference / .62).toFixed(2) + " Venus years have yet to pass.");
+      yearsTillArray.push(parseFloat(difference / 1.88).toFixed(2) + " Mars years have yet to pass.");
+      yearsTillArray.push(parseFloat(difference / 11.86).toFixed(2) + " Jupiter years have yet to pass.");
+      return yearsTillArray
+    }
+    else {
+      return "Please input a number larger than your current age!"
+    }
+  }
 }

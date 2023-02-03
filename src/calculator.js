@@ -13,8 +13,20 @@ export default class GalacticAge {
     this.jupiterAge = parseFloat(jupiterAge).toFixed(2);
   }
 
-  yearsPassed(amountOfYearsPassed) {
-  
+  yearsPassed(yearsPassed) {
+    let yearsPassedArray = []
+    if (this.userAge > yearsPassed) {
+      let difference = this.userAge - yearsPassed
+      yearsPassedArray.push(difference + " Earth years have passed.")
+      yearsPassedArray.push(parseFloat(difference / .24).toFixed(2) + " Mercury years have passed.")
+      yearsPassedArray.push(parseFloat(difference / .62).toFixed(2) + " Venus years have passed.")
+      yearsPassedArray.push(parseFloat(difference / 1.88).toFixed(2) + " Mars years have passed.")
+      yearsPassedArray.push(parseFloat(difference / 11.86).toFixed(2) + " Jupiter years have passed.")
+    }
+    else {
+      yearsPassedArray += "Please input a number less than your current age!"
+    }
+    return yearsPassedArray
   }
 
 

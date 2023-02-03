@@ -1,8 +1,8 @@
-# {Application Name}
+# Super Galactic Age Calculator
 
-#### By Justin Lee,
+#### By Justin Lee
 
-#### {Brief description of application}
+#### This website takes a user age and returns their earth age years in 4 different planets age.
 
 ## Technologies Used
 
@@ -17,14 +17,17 @@
 
 ## Description
 
-{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}
+This website takes in users age in years and returns what they would be in other planet years.
 
 ## Setup/Installation Requirements
 
 * Push repository to personal computer through github or gitbash using git clone.
-* Run npm install in Gitbash terminal to get dependancies for project...
+* Run npm install in Gitbash terminal to get dependancies for project.
+* If npm install has warnings, run npm install --force as some dependaices are simply outdated.
+* To run individual jest tests > npm test to see tests for calculator.
+* To see any source code, use any source code editor.
+* To run HTML website, run NPM build and look into the HTML file in the dist folder.
 
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}
 
 ## Known Bugs
 
@@ -35,6 +38,6 @@
 
 MIT
 
-{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}
+Feel free to use and test the code!
 
-Copyright (c) date author name(s)
+Copyright (c) 02/03/2023 Justin Lee

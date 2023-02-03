@@ -41,7 +41,7 @@ describe('GalacticAge', () => {
 
   test("Should test the class function yearsTillNextBirthday to return the amount of time that needs to pass till a given birthday e.x > 13 earth years need to pass for your 66th birthday", () => {
     const userAge = new GalacticAge(18);
-    let yearsPassed = userAge.yearsTillNextBirthday(36)
+    let yearsPassed = userAge.yearsTillNextBirthday(36);
     console.debug(yearsPassed);
     expect(yearsPassed);
     expect(yearsPassed.length).toEqual(5 || 1);

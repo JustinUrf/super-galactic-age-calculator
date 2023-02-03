@@ -14,35 +14,35 @@ export default class GalacticAge {
   }
 
   yearsPassed(yearsPassed) {
-    let yearsPassedArray = []
+    let yearsPassedArray = [];
     if (this.userAge > yearsPassed) {
-      let difference = this.userAge - yearsPassed
-      yearsPassedArray.push(difference + " Earth years have passed.")
-      yearsPassedArray.push(parseFloat(difference / .24).toFixed(2) + " Mercury years have passed.")
-      yearsPassedArray.push(parseFloat(difference / .62).toFixed(2) + " Venus years have passed.")
-      yearsPassedArray.push(parseFloat(difference / 1.88).toFixed(2) + " Mars years have passed.")
-      yearsPassedArray.push(parseFloat(difference / 11.86).toFixed(2) + " Jupiter years have passed.")
-      return yearsPassedArray
+      let difference = this.userAge - yearsPassed;
+      yearsPassedArray.push(difference + " Earth years have passed.");
+      yearsPassedArray.push(parseFloat(difference / .24).toFixed(2) + " Mercury years have passed.");
+      yearsPassedArray.push(parseFloat(difference / .62).toFixed(2) + " Venus years have passed.");
+      yearsPassedArray.push(parseFloat(difference / 1.88).toFixed(2) + " Mars years have passed.");
+      yearsPassedArray.push(parseFloat(difference / 11.86).toFixed(2) + " Jupiter years have passed.");
+      return yearsPassedArray;
       
     }
     else {
-      return "Please input a number less than your current age!"
+      return "Please input a number less than your current age!";
     }
   }
 
   yearsTillNextBirthday(yearsTill) {
-    let yearsTillArray = []
+    let yearsTillArray = [];
     if(this.userAge < yearsTill) {
-      let difference = yearsTill - this.userAge
+      let difference = yearsTill - this.userAge;
       yearsTillArray.push(difference + " Earth years have yet to pass");
       yearsTillArray.push(parseFloat(difference / .24).toFixed(2) + " Mercury years have yet to pass.");
       yearsTillArray.push(parseFloat(difference / .62).toFixed(2) + " Venus years have yet to pass.");
       yearsTillArray.push(parseFloat(difference / 1.88).toFixed(2) + " Mars years have yet to pass.");
       yearsTillArray.push(parseFloat(difference / 11.86).toFixed(2) + " Jupiter years have yet to pass.");
-      return yearsTillArray
+      return yearsTillArray;
     }
     else {
-      return "Please input a number larger than your current age!"
+      return "Please input a number larger than your current age!";
     }
   }
 }

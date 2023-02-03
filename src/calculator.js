@@ -1,3 +1,6 @@
-export default function GalacticAge(userAge) {
+export default class GalacticAge {
+  constructor(userAge) {
+    this.userAge = userAge
+  }
 
 }

@@ -9,26 +9,30 @@ describe('GalacticAge', () => {
 
   test("Should test class function mercuryAge() to return user's mercury age to the nearest rounded tenth ",() => {
     const userAge = new GalacticAge(7)
-    userAge.mercuryAge();
+    userAge. milkywayAge();
     expect(userAge.mercuryAge).toEqual("29.17")
   })
 
   test ("Should test class function venusAge() to return user's venus age to the nearest rounded tenth ",() => {
     const userAge = new GalacticAge(7);
-    userAge.venusAge();
+    userAge. milkywayAge();
     expect(userAge.venusAge).toEqual("11.29");
   })
   
   test("Should test class function marsAge() to return user's mars age to the nearest rounded tenth", () => {
     const userAge = new GalacticAge(7);
-    userAge.marsAge();
+    userAge. milkywayAge();
     expect(userAge.marsAge).toEqual("3.72")
   })
 
-    test("Should test class function jupiterAge() to return user's mars age to the nearest rounded tenth", () => {
+  test("Should test class function jupiterAge() to return user's mars age to the nearest rounded tenth", () => {
     const userAge = new GalacticAge(7);
-    userAge.jupiterAge();
+    userAge. milkywayAge();
     expect(userAge.jupiterAge).toEqual("0.59");
-    console.debug(parseFloat(userAge.jupiterAge));
+  })
+  
+  test("Should test the class function amountOfYearsPassed to return the amount of time passed", () => {
+    const userAge = new GalacticAge(7);
+    userAge.galaxyAge
   })
 })

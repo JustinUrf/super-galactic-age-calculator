@@ -46,11 +46,17 @@ describe('GalacticAge', () => {
   })
 
   
-  test("Should test the class function amountOfYearsPassed to return the amount of time passed", () => {
+  test("Should test the class function yearsPassed() to return the amount of time passed", () => {
     const userAge = new GalacticAge(18);
     let results = userAge.yearsPassed(11);
-    // console.debug(results);
-    expect(results.length).toEqual(6 || 1);
+    console.debug(results);
+    expect(results.length).toEqual(8) 
+  })
+
+  test("Should test the class fucntion for it's return false option ", () => {
+    const userAge = new GalacticAge(1);
+    let results = userAge.yearsPassed(11);
+    expect(results).toEqual("Please input a number less than your current age!"); 
   })
 
   test("Should test the class function yearsTillNextBirthday to return the amount of time that needs to pass till a given birthday e.x > 13 earth years need to pass for your 66th birthday", () => {
@@ -58,6 +64,6 @@ describe('GalacticAge', () => {
     let yearsPassed = userAge.yearsTillNextBirthday(36);
     // console.debug(yearsPassed);
     // expect(yearsPassed);
-    expect(yearsPassed.length).toEqual(5 || 1);
+    expect(yearsPassed.length).toEqual(5 || "");
   })
 })

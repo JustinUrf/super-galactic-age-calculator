@@ -8,7 +8,6 @@
 
 * JS
 * HTML
-* CSS
 * Bootstrap
 * Lint
 * Babel

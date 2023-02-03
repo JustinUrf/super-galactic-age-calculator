@@ -10,6 +10,7 @@ export default class GalacticAge {
     let venusAge = this.userAge / .62;
     this.venusAge = parseFloat(venusAge).toFixed(2);
   }
+  
 
 
 }

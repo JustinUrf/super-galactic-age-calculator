@@ -11,6 +11,11 @@ describe('GalacticAge', () => {
     const userAge = new GalacticAge(7)
     userAge.mercuryAge();
     expect(userAge.mercuryAge).toEqual("29.17")
+  })
 
+  test ("Should test class function venusAge() to return user's venus age to the nearest rounded tenth ",() => {
+    const userAge = new GalacticAge(7)
+    userAge.venusAge();
+    expect(userAge.venusAge).toEqual("11.29");
   })
 })

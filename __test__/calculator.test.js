@@ -7,10 +7,10 @@ describe('GalacticAge', () => {
     expect(userAge.userAge).toEqual(7);
   })
 
-  test("Should test class function mercuryAge() to return user's mercury age ",() => {
+  test("Should test class function mercuryAge() to return user's mercury age to the nearest rounded tenth ",() => {
     const userAge = new GalacticAge(7)
     userAge.mercuryAge();
-    expect(userAge.mercuryAge).toEqual(29.17)
+    expect(userAge.mercuryAge).toEqual("29.17")
 
   })
 })

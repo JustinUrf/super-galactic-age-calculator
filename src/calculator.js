@@ -54,7 +54,6 @@ export default class GalacticAge {
       yearsTillArray.push(parseFloat(difference / 29.48).toFixed(2) + " Saturn years have yet to pass.");
       yearsTillArray.push(parseFloat(difference / 84.07).toFixed(2) + " Urunus years have yet to pass.");
       yearsTillArray.push(parseFloat(difference / 164.90).toFixed(2) + " Neptune years have yet to pass.");
-
       return yearsTillArray;
     }
     else {

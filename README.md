@@ -30,8 +30,7 @@ This website takes in users age in years and returns what they would be in other
 
 ## Known Bugs
 
-* Any known issues
-* should go here
+* WIP HTML site not created yet
 
 ## License
 

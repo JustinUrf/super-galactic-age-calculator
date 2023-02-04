@@ -53,7 +53,7 @@ describe('GalacticAge', () => {
     expect(results.length).toEqual(8) 
   })
 
-  test("Should test the class fucntion for it's return false option ", () => {
+  test("Should test the class function yearsPassed for it's return false option ", () => {
     const userAge = new GalacticAge(1);
     let results = userAge.yearsPassed(11);
     expect(results).toEqual("Please input a number less than your current age!"); 
@@ -63,7 +63,12 @@ describe('GalacticAge', () => {
     const userAge = new GalacticAge(18);
     let yearsPassed = userAge.yearsTillNextBirthday(36);
     // console.debug(yearsPassed);
-    // expect(yearsPassed);
-    expect(yearsPassed.length).toEqual(5 || "");
+    expect(yearsPassed.length).toEqual(8);
+  })
+
+  test("Should test the class function yearsTillNextBirthday() for its else statement", () => {
+    const userAge = new GalacticAge(63);
+    let failedElse = userAge.yearsTillNextBirthday(33)
+    expect(failedElse).toEqual("PLease input a number larger than your current age!");
   })
 })

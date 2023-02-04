@@ -32,7 +32,7 @@ export default class GalacticAge {
       yearsPassedArray.push(parseFloat(difference / 11.86).toFixed(2) + " Jupiter years have passed.");
       yearsPassedArray.push(parseFloat(difference / 29.48).toFixed(2) + " Saturn years have apssed.");
       yearsPassedArray.push(parseFloat(difference / 84.07).toFixed(2) + " Uranus years have passed.");
-      yearsPassedArray.push(parseFloat(difference / 164.90).toFixed(2) + " Nepturn years have passed.");
+      yearsPassedArray.push(parseFloat(difference / 164.90).toFixed(2) + " Neptune years have passed.");
       
       return yearsPassedArray;
     }
@@ -51,6 +51,9 @@ export default class GalacticAge {
       yearsTillArray.push(parseFloat(difference / .62).toFixed(2) + " Venus years have yet to pass.");
       yearsTillArray.push(parseFloat(difference / 1.88).toFixed(2) + " Mars years have yet to pass.");
       yearsTillArray.push(parseFloat(difference / 11.86).toFixed(2) + " Jupiter years have yet to pass.");
+      yearsTillArray.push(parseFloat(difference / 29.48).toFixed(2) + " Saturn years have yet to pass.");
+      yearsTillArray.push(parseFloat(difference / 84.07).toFixed(2) + " Urunus years have yet to pass.");
+      yearsTillArray.push(parseFloat(difference / 164.90).toFixed(2) + " Neptune years have yet to pass.");
 
       return yearsTillArray;
     }

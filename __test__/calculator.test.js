@@ -69,6 +69,6 @@ describe('GalacticAge', () => {
   test("Should test the class function yearsTillNextBirthday() for its else statement", () => {
     const userAge = new GalacticAge(63);
     let failedElse = userAge.yearsTillNextBirthday(33)
-    expect(failedElse).toEqual("PLease input a number larger than your current age!");
+    expect(failedElse).toEqual("Please input a number larger than your current age!");
   })
 })
